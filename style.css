@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif; */
+
+:root {
+  --Montserrat: "Montserrat", sans-serif;
+  --Poppins: "Poppins", sans-serif;
+  --PtSerif: "PT Serif", serif;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 100px 0 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.topcontainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1024px;
+  height: 400px;
+  justify-content: space-between;
+  align-items: center;
+}
+.title,
+.crewDescription {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.title > h1 {
+  font-family: var(--PtSerif);
+  font-weight: 700;
+  font-size: 36px;
+  margin-left: 20px;
+}
+.crewDescription > h2 {
+  font-family: var(--Poppins);
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 80px;
+  text-transform: uppercase;
+}
+.crewDescription > p {
+  padding: 0 70px 0 0;
+  line-height: 1.6875rem;
+  font-family: var(--Poppins);
+  font-weight: 400;
+  font-size: 18px;
+}
+.crewImg {
+  height: 25rem;
+  width: 100%;
+  max-width: 18.75rem;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1024px;
+  gap: 80px;
+}
+.imgContainer {
+  position: relative;
+}
+.name {
+  font-size: 18px;
+}
+.role {
+  writing-mode: vertical-rl;
+  position: absolute;
+  right: -25px;
+  top: 0;
+  font-family: var(--PtSerif);
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.gallery > :nth-child(2),
+.gallery > :nth-child(5) {
+  margin-top: 80px;
+}
+footer {
+  color: #a9a9a9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.myName {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #a9a9a9;
+}
+
+@media screen and (max-width: 480px) {
+  .mainContainer {
+    margin: 30px;
+  }
+  .topcontainer {
+    flex-direction: column;
+    margin: 0;
+    height: 250px;
+    align-items: start;
+  }
+  .title > h1 {
+    font-size: 36px;
+    letter-spacing: -0.045em;
+    margin-bottom: 0;
+    margin-left: 0;
+    align-items: start;
+  }
+  .crewDescription > p {
+    font-size: 14px;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .crewDescription > h2 {
+    margin-top: 0;
+  }
+  .imgContainer {
+    height: 16.25rem;
+    width: 100%;
+    max-width: 8.625rem;
+  }
+  .crewImg {
+    max-height: 80%;
+    object-fit: cover;
+  }
+  .role {
+    font-size: 10px;
+  }
+  .name {
+    font-size: 14px;
+  }
+  .gallery {
+    column-gap: 40px;
+  }
+  .gallery > :nth-child(2) {
+    margin-top: 40px;
+  }
+
+  .gallery > :nth-child(3) {
+    margin-top: -80px;
+  }
+  .gallery > :nth-child(4) {
+    margin-top: -40px;
+  }
+  .gallery > :nth-child(5) {
+    margin-top: -80px;
+  }
+  .gallery > :nth-child(5) {
+    margin-top: -80px;
+  }
+  .gallery > :nth-child(6) {
+    margin-top: -40px;
+  }
+}
