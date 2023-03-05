@@ -37,6 +37,7 @@
 ## Overview
 
 ![screenshot](https://github.com/ninjabro/my-team-page/blob/main/desktop%20version.png?raw=true)
+![mobileversion](https://github.com/ninjabro/my-team-page/blob/main/mobile%20version.png?raw=true)
 
 - Where can I see your demo?
   [demo](https://ninjabro.github.io/my-team-page/)
