@@ -27,16 +27,12 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'PT Serif', serif; */
-
 :root {
   --Montserrat: "Montserrat", sans-serif;
   --Poppins: "Poppins", sans-serif;
   --PtSerif: "PT Serif", serif;
 }
-
+/* ------------------styling starts here------------- */
 .mainContainer {
   display: flex;
   flex-direction: column;
